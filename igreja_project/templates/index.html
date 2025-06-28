@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fieis</title>
+</head>
+<body>
+    <h1>Lista de Fiéis</h1>
+    <ul>
+    {% for fiel in fieis %}
+        <li>{{ fiel.nome }}</li>
+    {% empty %}
+        <li>Nenhum fiel cadastrado.</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
